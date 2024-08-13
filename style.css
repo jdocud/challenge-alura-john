@@ -80,9 +80,21 @@ section {
     margin-top: 10px;
     margin-left: 20px;
     padding-bottom: 40px;
+    background-image: url(imagenes/candado.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20%;
     box-sizing: border-box;
     position: relative;
     color: #D8DFE8;
+}
+
+.mensaje-encriptado.sin-texto {
+    background-image: url(imagenes/candado.jpg);
+}
+
+.mensaje-encriptado.con-texto {
+    background-image: none;
 }
 
 .mensaje-encriptado:focus {
