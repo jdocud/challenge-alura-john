@@ -1,0 +1,258 @@
+* { 
+    background-color: #22223B;
+    font-family: 'Play';   
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 10%;
+    max-width: 100px;
+}
+
+.titulo {
+    font-size: 20px;
+    color: #F2E9E4;
+    text-align: center;
+    margin-top: 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.mensaje-encriptar {
+    width: 320px;
+    height: 200px;
+    border-radius: 5px;
+    border: none;
+    color: #F2E9E4;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    text-transform: lowercase;
+    box-sizing: border-box;
+}
+
+.mensaje-encriptar:focus {
+    outline: none;
+    color: #F2E9E4;
+}
+
+.restriccion {
+    font-size: 10px;
+    color: #F2E9E4;
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.restriccion i {
+    color: yellow;
+}
+
+.mensaje-encriptado {
+    width: 320px;
+    height: 270px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    position: relative;
+    color: #D8DFE8;
+}
+
+.mensaje-encriptado:focus {
+    outline: 1px solid;
+    color: #F2E9E4;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.boton-encriptar,.boton-desencriptar,.boton-limpiar,.boton-copiar {
+    border-radius: 8px;
+    height: 30px;
+    width: 150px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-encriptar {
+    background-color: #C9ADA7;
+    color: #22223B;
+    border: 1px solid #0A3871;
+}
+
+.boton-encriptar:hover {
+    background-color: #9A8C98;
+}
+
+.boton-desencriptar {
+    background-color: #C9ADA7;
+    border: 1px solid #0A3871;
+    color: #22223B;
+}
+
+.boton-desencriptar:hover {
+    background-color: #9A8C98;
+}
+
+.boton-limpiar {
+    background-color: #C9ADA7;
+    border: 1px solid #0A3871;
+    color: #22223B;
+}
+
+.boton-limpiar:hover {
+    background-color: #9A8C98;
+}
+
+.boton-copiar {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    background-color: #C9ADA7;
+    color: #22223B;
+    border: #0A3871;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 30px;
+    width: 150px;
+}
+
+.boton-copiar:hover {
+    background-color: #9A8C98;
+}
+
+.footer {
+    font-family: 'Montserrat';
+    font-size: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #9A8C98;
+}
+
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 18px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        align-items: center;
+        text-align: center;
+    }
+
+    .mensaje-encriptar {
+        width: 80vw;
+        height: 200px;
+    }
+
+    .botones {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .boton-encriptar,.boton-desencriptar,.boton-limpiar {
+        width: 120px;
+        height: 25px;
+    }
+
+    .mensaje-encriptado {
+        width: 80vw;
+        height: 200px;
+    }
+
+    .boton-copiar {
+        width: 120px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 16px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        align-items: center;
+        text-align: center;
+    }
+
+    .mensaje-encriptar {
+        width: 90vw;
+        height: 150px;
+    }
+
+    .botones {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .boton-encriptar,.boton-desencriptar,.boton-limpiar,.boton-copiar {
+        width: 100px;
+        height: 20px;
+    }
+
+    .mensaje-encriptado {
+        width: 90vw;
+        height: 150px;
+    }
+
+    .boton-copiar {
+        bottom: 5px;
+        padding: 3px 6px;
+    }
+}
